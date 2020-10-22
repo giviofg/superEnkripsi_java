@@ -54,6 +54,7 @@ public class endecrypt extends javax.swing.JFrame {
         btnExit = new javax.swing.JButton();
         txtPass = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -65,10 +66,11 @@ public class endecrypt extends javax.swing.JFrame {
         setFont(new java.awt.Font("Susah Ngesubs SemiBold", 2, 10)); // NOI18N
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/enkripsi/dekripsi/yericomordor_32.png")).getImage());
         setMaximumSize(new java.awt.Dimension(1920, 1080));
-        setPreferredSize(new java.awt.Dimension(900, 620));
+        setPreferredSize(new java.awt.Dimension(900, 650));
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jPanel1.setToolTipText("Secure your message. Made with love by GiePie");
+        jPanel1.setPreferredSize(new java.awt.Dimension(775, 650));
 
         jScrollPane1.setToolTipText("Pesan asli");
 
@@ -110,7 +112,7 @@ public class endecrypt extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -215,6 +217,21 @@ public class endecrypt extends javax.swing.JFrame {
         });
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("irohamaru mikami Regular", 0, 10)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("https://github.com/giviofg/superEnkripsi_java");
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel8MouseExited(evt);
+            }
+        });
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 230, -1));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -230,7 +247,9 @@ public class endecrypt extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -552,6 +571,16 @@ public class endecrypt extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/enkripsi/dekripsi/yericomordor_64.png")));
     }//GEN-LAST:event_jLabel7MouseExited
 
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+        // TODO add your handling code here:
+        jLabel8.setForeground(new java.awt.Color(0, 204, 204));
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+        // TODO add your handling code here:
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jLabel8MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -788,6 +817,7 @@ public class endecrypt extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
